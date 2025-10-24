@@ -1,0 +1,68 @@
+<html>
+	<head>
+	
+		<meta charset="UTF-8">
+		
+		<title>Sinal</title>
+		
+	</head>
+	<body>
+	
+		<h1>entrada- formulario html</h1>
+		
+		<h2>sinal de transito</h2>
+		
+		<input type="radio" name="sinal" id="v" onclick="exibir('verde')">verde
+		<input type="radio" name="sinal" id="a" onclick="exibir('amarelo')">amarelo
+		<input type="radio" name="sinal" id="r" onclick="exibir('vermelho')">vermelho
+		
+		<script>
+			function exibir(aux_sinal)
+			{
+				
+				if (aux_sinal=="verde"){
+					mens_ifelse.innerHTML="siga elseif"}
+					
+				else if (aux_sinal=="amarelo"){
+					mens_ifelse.innerHTML="atenção elseif"}
+					
+				else{
+					mens_ifelse.innerHTML="pare elseif"}
+				
+				if (aux_sinal=="verde"){
+					mens_if.innerHTML="siga if"}
+				if (aux_sinal=="amarelo"){
+					mens_if.innerHTML="atenção if"}
+				if (aux_sinal=="vermelho"){
+					mens_if.innerHTML="pare if"}
+				
+				if (aux_sinal=="verde"){
+					mens_elseif.innerHTML="siga else{if"}
+				else {if (aux_sinal=="amarelo"){
+					mens_elseif.innerHTML="atenção else{if"}
+				else {if (aux_sinal=="vermelho"){
+					mens_elseif.innerHTML="pare else{if"}}}
+					
+				switch(aux_sinal){
+				
+				case "verde":
+					mens_cs.innerHTML="siga case"
+					break
+				case "amarelo":
+					mens_cs.innerHTML="atenção case"
+					break
+				case "vermelho":
+					mens_cs.innerHTML="pare case"
+					break
+				}
+					
+			}	
+		</script><br><br>
+		<h2>saida de dados</h2>
+		<text align="center" id="mens_if"></text><br>
+		<text align="center" id="mens_ifelse"></text><br>
+		<text align="center" id="mens_elseif"></text><br>
+		<text align="center" id="mens_cs"></text><br>
+		
+	</body>
+</html>

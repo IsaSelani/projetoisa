@@ -1,0 +1,52 @@
+<html>
+	<body>
+		numero1: <input type="number" id="n1"><br>
+		numero2: <input type="number" id="n2"><br>
+		
+		<table width=300px height=5% >
+		<tr><td>
+		<center>
+		<input type="button" id="btnmais" value="+" onclick="mais()">
+		<input type="button" id="btnmenos" value="-" onclick="menos()">
+		<input type="button" id="btndividir" value="/" onclick="div()">
+		<input type="button" id="btnvezes" value="x" onclick="vezes()">
+		</center>
+		</td></tr>
+		</table><br>
+		
+		rusultado<input type="button" id="btnresposta" value=" " onclick="rec()">
+		
+		<script>
+			
+			function mais(){
+			var aux_n1= parseInt(n1.value)
+			var aux_n2= parseInt(n2.value)
+			
+				var s= aux_n1 + aux_n2
+				alert(s)
+			}
+			function menos(){
+			var aux_n1= n1.value 
+			var aux_n2= n2.value 
+				var s=aux_n1-aux_n2
+				alert(s)
+			}
+			function div(){
+			var aux_n1= n1.value 
+			var aux_n2= n2.value 
+				var s=aux_n1/aux_n2
+				alert(s)
+			}
+			function vezes(){
+			var aux_n1= n1.value 
+			var aux_n2= n2.value 
+				var s=aux_n1*aux_n2
+				alert(s)
+			}
+			function rec(){
+			}
+			
+			
+		</script>
+	</body>
+</html>
